@@ -26,6 +26,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+APV_REDUCTION = 'django.contrib.auth.password_validation.'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -85,20 +87,16 @@ DATABASES = {
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [{
-        'NAME': f'django.contrib.auth.password_validation.'
-                f'UserAttributeSimilarityValidator',
+        'NAME': APV_REDUCTION + 'UserAttributeSimilarityValidator',
     },
     {
-        'NAME': f'django.contrib.auth.password_validation.'
-                f'MinimumLengthValidator',
+        'NAME': APV_REDUCTION + 'MinimumLengthValidator',
     },
     {
-        'NAME': f'django.contrib.auth.password_validation.'
-                f'CommonPasswordValidator',
+        'NAME': APV_REDUCTION + 'CommonPasswordValidator',
     },
     {
-        'NAME': f'django.contrib.auth.password_validation.'
-                f'NumericPasswordValidator',
+        'NAME': APV_REDUCTION + 'NumericPasswordValidator',
     },
 ]
 
