@@ -86,18 +86,11 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [{
-        'NAME': APV_REDUCTION + 'UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': APV_REDUCTION + 'MinimumLengthValidator',
-    },
-    {
-        'NAME': APV_REDUCTION + 'CommonPasswordValidator',
-    },
-    {
-        'NAME': APV_REDUCTION + 'NumericPasswordValidator',
-    },
+AUTH_PASSWORD_VALIDATORS = [
+    {'NAME': APV_REDUCTION + 'UserAttributeSimilarityValidator'},
+    {'NAME': APV_REDUCTION + 'MinimumLengthValidator'},
+    {'NAME': APV_REDUCTION + 'CommonPasswordValidator'},
+    {'NAME': APV_REDUCTION + 'NumericPasswordValidator'},
 ]
 
 # Internationalization
