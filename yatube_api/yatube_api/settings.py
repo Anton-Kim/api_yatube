@@ -79,10 +79,10 @@ DATABASES = {
 APV_REDUCTION = 'django.contrib.auth.password_validation.'
 
 AUTH_PASSWORD_VALIDATORS = [
-    {'NAME': APV_REDUCTION + f'UserAttributeSimilarityValidator'},
-    {'NAME': APV_REDUCTION + f'MinimumLengthValidator'},
-    {'NAME': APV_REDUCTION + f'CommonPasswordValidator'},
-    {'NAME': APV_REDUCTION + f'NumericPasswordValidator'},
+    {'NAME': APV_REDUCTION + 'UserAttributeSimilarityValidator'},
+    {'NAME': APV_REDUCTION + 'MinimumLengthValidator'},
+    {'NAME': APV_REDUCTION + 'CommonPasswordValidator'},
+    {'NAME': APV_REDUCTION + 'NumericPasswordValidator'},
 ]
 
 # Internationalization
